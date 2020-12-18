@@ -1,108 +1,24 @@
-<!DOCTYPE html>
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - Letter-spacing animation</title>
-  <link rel="stylesheet" href="./style.css">
-
-</head>
-<style>
-@import url('https://fonts.googleapis.com/css?family=Gochi+Hand|Roboto:700');
-
-.text-with-animation {
-  font-size: 6vw;
-  text-transform: uppercase;
-  font-family: 'Roboto', sans-serif;
-  text-align: center;
-  line-height: 100vh;
-  vertical-align: middle;
-  animation: main-text-animation 1.7s ease-in-out forwards;
-  font-weight: 700;
-  color: #f19578;
-  overflow: hidden;
-  display: block;
-  width: 500vw;
-  margin-left: -200vw;
-}
-
-.container {
-  height: 100vh;
-  line-height: 100vh;
-  vertical-align: middle;
-}
-
-.subtext-with-animation {
-  position: absolute;
-  font-size: 5vw;
-  text-align: center;
-  line-height: 100vh;
-  vertical-align: middle;
-  top: 0;
-  width: 100%;
-  font-family: 'Gochi Hand', cursive;
-  color: #fff;
-  letter-spacing: 4px;
-  user-select: none;
-  overflow: hidden;
-  display: block;
-}
-
-.subtext-with-animation span:first-of-type {
-  position: relative;
-  opacity: 0;
-  animation: word-animation 0.5s ease-out 1.5s forwards;
-}
-
-.subtext-with-animation span:nth-of-type(2) {
-  position: relative;
-  opacity: 0;
-  animation: word-animation 0.5s ease-out 1.7s forwards;
-}
-
-body {
-  overflow: hidden;
-  margin: 0;
-  background: linear-gradient(to bottom right, #e3915d 20%, #be3956);
-}
-
-body, html {
-  width: 100vw;
-  max-width: 100vw;
-}
-
-@keyframes main-text-animation {
-  0% {
-    letter-spacing: 25vw;
-    word-spacing: 100vw;
-    opacity: 0;
-  }
-  100% {
-    letter-spacing: 4px;
-    word-spacing: 1vw;
-    opacity: 1;
-  }
-}
-
-@keyframes word-animation {
-  0% {
-    top: 10vw;
-    opacity: 0;
-  }
-  100% {
-    top: 3.5vw;
-    opacity: 1;
-  }
-}
-</style>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body>
-<!-- partial:index.partial.html -->
-<div class="container">
-<div class="text-with-animation">We Can</div>
-<div class="subtext-with-animation">
-  <span>take</span> <span>it</span>
-</div>
-</div>
-<!-- partial -->
-  
-</body>
-</html>
 
+<div class="w3-container">
+  <h2>Mobile First Responsiveness</h2>
+  <p class="w3-large">Try to resize the window!</p>
+</div>
+
+<div class="w3-row w3-border">
+  <div class="w3-container w3-half w3-red">
+    <h2>w3-half</h2>  
+    <p>The w3-half class uses 50% of the parent container.</p>
+    <p>On screens smaller than 601 pixels it resizes to 100%.</p>
+  </div>
+  <div class="w3-container w3-half">
+    <h2>w3-half</h2>  
+  </div>
+</div>
+
+</body>
+</html>  
