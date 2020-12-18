@@ -96,9 +96,9 @@ body, html {
 <body>
 <!-- partial:index.partial.html -->
 <div class="container">
-<div class="text-with-animation">Coming Soon</div>
+<div class="text-with-animation">We Can</div>
 <div class="subtext-with-animation">
-  <span>Stay</span> <span>Tuned</span>
+  <span>take</span> <span>it</span>
 </div>
 </div>
 <!-- partial -->
