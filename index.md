@@ -1,4 +1,4 @@
-<html lang="en" >
+<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <title>CodePen - Letter-spacing animation</title>
