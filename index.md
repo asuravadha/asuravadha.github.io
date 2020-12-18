@@ -1,20 +1,109 @@
-<html lang="en">
-<meta charset="UTF-8">
-<title>Page Title</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="">
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Letter-spacing animation</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
 <style>
-html,body {font-family:"Verdana",sans-serif}
-h1,h2,h3,h4,h5,h6 {font-family:"Segoe UI",sans-serif}
+@import url('https://fonts.googleapis.com/css?family=Gochi+Hand|Roboto:700');
+
+.text-with-animation {
+  font-size: 6vw;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  line-height: 100vh;
+  vertical-align: middle;
+  animation: main-text-animation 1.7s ease-in-out forwards;
+  font-weight: 700;
+  color: #f19578;
+  overflow: hidden;
+  display: block;
+  width: 500vw;
+  margin-left: -200vw;
+}
+
+.container {
+  height: 100vh;
+  line-height: 100vh;
+  vertical-align: middle;
+}
+
+.subtext-with-animation {
+  position: absolute;
+  font-size: 5vw;
+  text-align: center;
+  line-height: 100vh;
+  vertical-align: middle;
+  top: 0;
+  width: 100%;
+  font-family: 'Gochi Hand', cursive;
+  color: #fff;
+  letter-spacing: 4px;
+  user-select: none;
+  overflow: hidden;
+  display: block;
+}
+
+.subtext-with-animation span:first-of-type {
+  position: relative;
+  opacity: 0;
+  animation: word-animation 0.5s ease-out 1.5s forwards;
+}
+
+.subtext-with-animation span:nth-of-type(2) {
+  position: relative;
+  opacity: 0;
+  animation: word-animation 0.5s ease-out 1.7s forwards;
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+  background: linear-gradient(to bottom right, #e3915d 20%, #be3956);
+}
+
+body, html {
+  width: 100vw;
+  max-width: 100vw;
+}
+
+@keyframes main-text-animation {
+  0% {
+    letter-spacing: 25vw;
+    word-spacing: 100vw;
+    opacity: 0;
+  }
+  100% {
+    letter-spacing: 4px;
+    word-spacing: 1vw;
+    opacity: 1;
+  }
+}
+
+@keyframes word-animation {
+  0% {
+    top: 10vw;
+    opacity: 0;
+  }
+  100% {
+    top: 3.5vw;
+    opacity: 1;
+  }
+}
 </style>
-<script src=""></script>
 <body>
-
-<img src="https://images.pexels.com/photos/116909/pexels-photo-116909.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="LA" style="width:100%">
-
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
-<p>This is a another paragraph.</p>
-
+<!-- partial:index.partial.html -->
+<div class="container">
+<div class="text-with-animation">Coming Soon</div>
+<div class="subtext-with-animation">
+  <span>Stay</span> <span>Tuned</span>
+</div>
+</div>
+<!-- partial -->
+  
 </body>
 </html>
+
